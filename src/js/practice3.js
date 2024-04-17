@@ -80,9 +80,10 @@ document.write(promed) */
 
 //18.Calcular la factorial de 5.
 let num = 5
+let fact = num
 
-for (let i = num; i >= 1; i -= 1) {
-    let fact = i
+for (let i = num-1; i >= 1; i -= 1) {
+    fact *= i
 }
 console.log(fact)
 /* for (let i = 1; i <= 5; i += 1){
