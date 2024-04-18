@@ -144,7 +144,7 @@ console.groupEnd()
 
 //Logical Operators
 
-console.group("Logical Operators")
+console.groupCollapsed("Logical Operators")
 
 //Single operators
 console.log(2 < 5) // TRUE
@@ -161,5 +161,34 @@ let password = "password"
 
 console.log(user=="chucho" && password=="1234") // TRUE + FALSE = FALSE
 
-console.groupEnd
+console.groupEnd()
 /* ----------------------------------------------------------------------------------------- */
+
+// Use of the operator "OR" "||"
+
+console.groupCollapsed("Use of the operator 'OR' '||'")
+
+//          true      true
+console.log(5 < 10 || 2 < 8) //True
+
+//          false      true
+console.log(50 > 100 || 6 > 3) //True
+
+//          false     true              false 
+console.log(5 > 20 || 9 < 11 || "javier" == "Javier") //True
+
+//anidated logical operators
+
+//           true + true = true             false
+console.log((4 < 10 && 2 < 60) || ("Operator" == "operator")) // True
+
+//              true && true ||           false
+console.log(4 < 10 && 2 < 60 || "Operator" == "operator") // True
+
+// Negation operator NOT '!' (Translates true to false & viceversa)
+
+let variable = false
+
+console.log(!variable) // true
+
+console.groupEnd()
