@@ -40,3 +40,78 @@ console.log(comparation) */
 //11.¿Es "2.75" mayor que 2.5?
 /* let comparation = "2.75" > 2.5
 console.log(comparation) */
+
+//12. ¿Es "2.75" mayor que 2.75?
+/* let comparation = "2.75" > 2.75
+console.log(comparation) */
+
+//13. ¿Es "2.75" mayor o igual a 2.75?
+/* let comparation = "2.75" >= 2.75
+console.log(comparation) */
+
+//14. ¿Es "2.75" menor o igual a 2.75?
+/* let comparation = "2.75" <= 2.75
+console.log(comparation) */
+
+//15. ¿Es "2.75" un número mayor a 2.8?
+/* let comparation = "2.75" > 2.8
+console.log(comparation) */
+
+//16. ¿Es "2.75" un número menor a 2.7?
+/* let comparation = "2.75" < 2.7
+console.log(comparation) */
+
+//17. ¿Es el nombre "John" diferente de "john"?
+/* let comparation = "John" != "john"
+console.log(comparation) */
+
+//18. ¿Es el nombre "John" diferente de "Jon"?
+/* let comparation = "John" != "Jon"
+console.log(comparation) */
+
+//19. ¿Es la edad 30 estrictamente diferente de "30"?
+/* let comparation = 30 !== "30"
+console.log(comparation) */
+
+//20. ¿Cuál es el resultado de desplazar a la derecha 25 dos veces en bits?
+/* let anny = 25>>2
+console.log(anny) */
+
+//21. ¿Cuál es el resultado de desplazar a la izquierda 8 tres veces en bits?
+/* let anny = 8<<3
+console.log(anny) */
+
+//22. ¿Son 15 y 15 iguales?
+/* let comparation = 15 == 15
+console.log(comparation) */
+
+//23. ¿Son 20 y 30 diferentes?
+/* let comparation = 20 != 30
+console.log(comparation) */
+
+//24. ¿Es "15" mayor que 30?
+/* let comparation = "15" > 30
+console.log(comparation) */
+
+//25. ¿Es 20 menor que 40?
+/* let comparation = 20 < 40
+console.log(comparation) */
+
+//26. ¿Es 100 mayor o igual a "99"?
+/* let comparation = 100 >= "99"
+console.log(comparation) */
+
+//27. ¿Es 500 estrictamente igual a "500"?
+/* let comparation = 500 === "500"
+console.log(comparation) */
+
+//28. ¿Es 750 estrictamente igual a 750?
+/* let comparation = 750 === 750
+console.log(comparation) */
+
+//29. ¿Es 5 estrictamente diferente de "5"?
+/* let comparation = 5 !== "5"
+console.log(comparation) */
+
+//30. ¿Es 3 mayor que 5 y 4 menor que 6? (Operadores lógicos)
+console.log(3 > 5 && 4 < 6)

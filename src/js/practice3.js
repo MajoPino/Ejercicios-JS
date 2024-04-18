@@ -87,9 +87,16 @@ for (let i = num-1; i >= 1; i -= 1) {
 }
 console.log(fact) */
 
-let fact5 = 1
+/* let fact5 = 1
 
 for(let i = 1; i < 6; i++ ) {
     fact5 *= i
 }
-console.log(fact5)
+console.log(fact5) */
+let num = 5
+let fact = 1
+
+for (let i = num; i >= 1; i -= 1) {
+    fact *= i
+}
+console.log(fact)
