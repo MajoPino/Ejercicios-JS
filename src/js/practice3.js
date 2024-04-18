@@ -79,14 +79,17 @@ document.write(Math.min(...list)) */
 document.write(promed) */
 
 //18.Calcular la factorial de 5.
-let num = 5
+/* let num = 5
 let fact = num
 
 for (let i = num-1; i >= 1; i -= 1) {
     fact *= i
 }
-console.log(fact)
-/* for (let i = 1; i <= 5; i += 1){
-    document.write(`${i}*${num}=${i*num}  | `)
-    document.write(`${(i*num)}`)
-} */
+console.log(fact) */
+
+let fact5 = 1
+
+for(let i = 1; i < 6; i++ ) {
+    fact5 *= i
+}
+console.log(fact5)
