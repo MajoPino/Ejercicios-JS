@@ -108,7 +108,7 @@ console.groupEnd()
 
 //Comparative operators
 
-console.group("Comparative operators")
+console.groupCollapsed("Comparative operators")
 
 let tempNumber = 10
 
@@ -140,4 +140,26 @@ console.log(15 >= 15) //Plus Equal (true)
 
 console.groupEnd()
 
+/* ----------------------------------------------------------------------------------------- */
+
+//Logical Operators
+
+console.group("Logical Operators")
+
+//Single operators
+console.log(2 < 5) // TRUE
+console.log(2 > 1) // TRUE
+
+//Anidated operators "&&" (All conditions have to be true for the result to be true as well)
+console.log(2 < 5 && 2 > 1) // TRUE + TRUE = TRUE
+console.log(2 < 5 && 2 > 1 && 20 < 1) // TRUE + TRUE + FALSE = FALSE
+console.log(2 > 5 && 2 < 1 && 20 > 1) // FALSE + FALSE + TRUE = FALSE
+
+// "Login form" example (could be used in conditional)
+let user = "chucho"
+let password = "password"
+
+console.log(user=="chucho" && password=="1234") // TRUE + FALSE = FALSE
+
+console.groupEnd
 /* ----------------------------------------------------------------------------------------- */
