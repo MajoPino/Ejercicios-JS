@@ -103,3 +103,41 @@ numberForDecreasing-=3
 console.info("*)", numberForDecreasing) //95
 
 console.groupEnd()
+
+/* ----------------------------------------------------------------------------------------- */
+
+//Comparative operators
+
+console.group("Comparative operators")
+
+let tempNumber = 10
+
+let answer = true
+
+//Equality operator (A single = means asignation, more than one is Comparation)
+console.log(4 == 4)
+console.log(4 == "4") //Double = just checks content
+console.log(4 === "4") //Triple = checks type and content
+console.log(4 === 4)
+
+//Diferency operator (Instead of two '=' it is used '!=' instead)
+console.log(4 != 4) //(False)
+console.log(4 != "4") //A single = just checks content (False)
+console.log(4 !== "4") //Double = checks type and content (True)
+console.log(4 !== 4) //(False)
+
+// Minus what "<"
+console.log(2 < 5) //true
+console.log(60 < 35) //false
+console.log(5 < 5) //false
+console.log(15 <= 15) //Minus Equal (true)
+
+// Plus what ">"
+console.log(2 > 5) //false
+console.log(60 > 35) //true
+console.log(5 > 5) //false
+console.log(15 >= 15) //Plus Equal (true)
+
+console.groupEnd()
+
+/* ----------------------------------------------------------------------------------------- */
