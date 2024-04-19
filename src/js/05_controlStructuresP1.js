@@ -2,7 +2,7 @@
 
 
 //If conditional
-console.groupCollapsed("Simple conditionals")
+/* console.groupCollapsed("Simple conditionals")
 const nameUser = "Juan"
 
 //true
@@ -16,7 +16,7 @@ let age = 18
 if (age >= 18) {
     console.log("You're an adult now, you are allowed to vote")
 }
-console.groupEnd()
+console.groupEnd() */
 
 /* ----------------------------------------------------------------------------------------- */
 
@@ -144,3 +144,4 @@ switch (lunch) {
 for (let i = 1; i <= 10; i++){
     console.log(`${number} * ${i} = ${i*number}`)
 } */
+
