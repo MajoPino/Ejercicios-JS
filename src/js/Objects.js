@@ -63,10 +63,8 @@ console.log(coche)
 /* 10. Agrega un método al objeto coche que imprima un mensaje 
 en la consola.  */
 
-coche.mensaje = {
-    function (){
-        console.log(`This ${coche.nombreCarro} is the new technology from the future`)
-    }
+coche.mensaje = function (){
+    console.log(`This ${coche.nombreCarro} is the new technology from the future`)
 }
 
 /* 11. Crea un objeto llamado circulo con propiedades como radio y 
@@ -124,4 +122,92 @@ console.log(computadora)
 
 /* 19. Crea un objeto llamado mascota con propiedades como 
 nombre, especie y edad. */
+
+let mascota = {
+    nombre: "Spok",
+    especie: "Gato",
+    edad: "7"
+}
+
+/* 20. Muestra en la consola la especie de la mascota en 
+mayúsculas. */
+
+console.log(mascota.especie.toUpperCase())
+
+/* 21. Crea un objeto llamado fruta con propiedades como nombre y 
+color. */
+
+let fruta = {
+    nombre: "Pitaya",
+    color: "Rosada",
+    madurez: "madura"
+}
+
+/* 22. Agrega un método al objeto fruta que imprima un mensaje 
+indicando si la fruta está madura.  */
+
+fruta.madurez = function () {
+    if (fruta.madurez == "madura") {
+        console.log("La fruta está madura")
+    } else {
+        console.log("La fruta no está madura")
+    }
+}
+
+/* 23. Crea un objeto llamado estudiante con propiedades como 
+nombre, edad y calificaciones. */
+
+let estudiante = {
+    nombre: "Nathaly",
+    apellido: "Ariza",
+    edad: "19",
+    calificaciones: {
+        spanish: 50, 
+        english: 45, 
+        maths: 42, 
+        art: 50, 
+        sports: 40
+    }
+}
+
+/* 24. Muestra en la consola el promedio de las calificaciones del 
+estudiante */
+
+let {calificaciones: {
+    spanish, 
+    english, 
+    maths, 
+    art, 
+    sports
+}} = estudiante
+
+let prom = (spanish + english + maths + art + sports) / 5
+console.log(prom)
+
+/* 25. Agrega una propiedad al objeto estudiante que indique si ha 
+aprobado o no. */
+
+estudiante.aprobado = "aprobad@"
+
+/* 26. Crea un objeto llamado bolsa con propiedades como tamaño y 
+color. */
+
+let bolsa = {
+    tamaño: "40cm",
+    color: "rojo",
+    mensaje: function(){
+        console.log(`La capacidad de la bolsa es de ${this.tamaño}`)
+    }
+}
+bolsa.mensaje()
+
+/* 28. Agrega un método al objeto bolsa que cambie su color.  */
+
+bolsa.color = function () {
+    if(bolsa.color == "rojo"){
+        bolsa.color = "Naranja"
+    }else{
+        bolsa.color = "rojo"
+    }
+}
 
