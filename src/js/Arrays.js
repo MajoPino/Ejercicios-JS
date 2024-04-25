@@ -211,6 +211,47 @@ duplicados2.forEach(numero => {
 console.log('Duplicados', duplicados2)
 console.log('Sin duplicados', sinDuplicados)
 
+//Async way
+
+let sinDuplicados2 = []
+
+for (let i = 0; i < duplicados2.length; i++) {
+    let duplicado = false;
+    for (let j = 0; j < sinDuplicados2.length; j++) {
+        if (duplicados2[i] === sinDuplicados2[j]) {
+            duplicado = true;
+            break;
+        }
+    }
+    if (!duplicado) {
+        sinDuplicados2.push(duplicados2[i]);
+    }
+}
+
+console.log('Sin duplicados 2', sinDuplicados2)
+
+//Another async way
+
+const arrayOriginal = [1, 2, 3, 1, 2, 2, 3, 4, 4, 5]
+let arrayFiltrado = [] // [1,2,3,4,5]
+for (let i = 0; i < arrayOriginal.length; i++) {
+    let element = arrayOriginal[i]
+    let encontrado = false
+    for (let j = 0; j < arrayFiltrado.length; j++) {
+        if (element === arrayFiltrado[j]){
+           encontrado = true
+           break;
+        }
+    }
+    if(encontrado===false){
+        arrayFiltrado.push(element)
+    }
+}
+console.log(arrayOriginal)
+console.log("antes - despues")
+console.log(arrayFiltrado)
+
+
 //25. Crea dos arrays llamados array1 y array2, cada uno con al menos 3 nombres.
 
 let nombres1 = ["Marc", "Jake", "Steven"]
